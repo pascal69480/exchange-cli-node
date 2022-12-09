@@ -17,11 +17,11 @@ pipeline {
             sh "npm run build"
             }
         }
-        //stage ('Unit Tests') {
-        //   steps {
-         //       sh "npm run test:unit"
-        //    }
+        stage ('Unit Tests') {
+           steps {
+               sh "npm run test:unit"
+            }
             
-        //}
+        }
     } // stages
 } // pipeline
