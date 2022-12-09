@@ -23,5 +23,12 @@ pipeline {
             }
             
         }
+        
+        stage ('Fiunctional Tests') {
+           steps {
+               sh "npm run test:functional"
+            }
+            
+        }
     } // stages
 } // pipeline
