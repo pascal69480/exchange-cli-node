@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        node { label 'nodejs' }
+        any
     }
     stages {
         stage('Install Dependencies') {
@@ -17,6 +17,12 @@ pipeline {
             steps {
             sh "npm run build"
             }
+        }
+        //stage ('Unit Tests') {
+        //   steps {
+         //       sh "npm run test:unit"
+        //    }
+            
         }
     } // stages
 } // pipeline
